@@ -1,4 +1,4 @@
- int select(int arr[], int i)
+ int insert(int arr[], int i)
     {
       
         for(int k=0;k<i;k++) {
@@ -8,9 +8,9 @@
         }
     }
      
-    void selectionSort(int arr[], int n)
+    void insertionSort(int arr[], int n)
     {
        for(int i=0;i<n;i++) {
-           select(arr,i);
+           insert(arr,i);
        }
     }
