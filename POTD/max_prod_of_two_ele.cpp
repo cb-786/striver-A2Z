@@ -1,0 +1,13 @@
+ int maxProduct(vector<int>& nums) {
+        for(int i=1;i<nums.size();i++) {
+            if(nums[i]<nums[i-1]) {
+                swap(nums[i],nums[i-1]);
+            }
+        }
+         for(int i=1;i<nums.size()-1;i++) {
+            if(nums[i]<nums[i-1]) {
+                swap(nums[i],nums[i-1]);
+            }
+        }
+        return (nums[nums.size()-1]-1)*(nums[nums.size()-2]-1);
+    }
